@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+    <TITLE>Prácticas de Conservación de Agua en Agricultura</TITLE>
+    <link rel="icon" href="trK72SX-removebg-preview.ico">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Faculty+Glyphic&family=New+Amsterdam&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ESTILOS.CSS">
+</head>
+<header>
+    <h1>
+      <img src="https://i.imgur.com/trK72SX.jpeg" alt="Descripción de la imagen" style="width: 150px;">
+      AQUA PLANET
+    </h1>
+  
+    <div class="header-container">
+        <!-- Menú de navegación -->
+        <nav class="navbar">
+          <ul>
+              <li><a href="indice.html">Inicio</a></li>
+              <li>
+                  <a href="#">Temas</a>
+                  <ul class="dropdown">
+                      <li><a href="tema1.html">Conservación del Agua en el Hogar</a></li>
+                      <li><a href="tema2.html">Conservación del Agua en la Industria</a></li>
+                      <li><a href="tema3.html">Conservación del Agua en la Agricultura</a></li>
+                      <li><a href="tema4.html">Prácticas de Conservación de Agua en Agricultura</a></li>
+                      <li><a href="tema5.html">Agua y Seguridad Alimentaria</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Otras Formas de Cuidar el Planeta</a>
+                  <ul class="dropdown">
+                      <li><a href="RECICLAJE.HTML">Reciclaje</a></li>
+                      <li><a href="REFORESTACION.HTML">Reforestación</a></li>
+                  </ul>
+              </li>
+              <li><a href="NOSOTROS.html">Nosotros</a></li>
+          </ul>
+      </nav>
+      
+    
+        <!-- Buscador alineado a la derecha -->
+        <div class="buscador">
+          <form id="form-busqueda" action="https://www.google.com/search" method="get" target="_blank">
+              <input type="text" name="q" placeholder="Buscar..." required>
+              <input type="submit" value="Buscar">
+          </form>
+        </div>
+      </div>
+    </header>
+    
+    
+    <marquee> "El agua es vida. Cada gota cuenta. Cuida y respeta este recurso invaluable para las futuras generaciones." </marquee>
+    
+<!-- Título Principal -->
+<div style="background-color: #202C69; padding: 15px; text-align: center;">
+    <h1 style="color: #ffffff; font-size: 2.5em;">Prácticas de Conservación de Agua en Agricultura</h1>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 20px; margin: 20px auto;">
+    <div style="text-align: center; border: 3px solid #ccc; border-radius: 10px; overflow: hidden;">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXIwemh3emdra3p4dnF6dWoxbGd5YXI2dDF4ZGw0YXl2amZhYzMyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pJiexQiPLOPjg0Mf29/giphy.gif" width="405" alt="Imagen 1">
+    </div>
+    <div style="text-align: center; border: 3px solid #ccc; border-radius: 10px; overflow: hidden;">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW4xcHhxY3NhcTg3eG1pNTBydXh3dGVqaTA5aHN3bWpjZDVlYmxueiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J5iss0SKaG5xpkJ7qP/giphy.gif" width="405" alt="Imagen 2">
+    </div>
+    <div style="text-align: center; border: 3px solid #ccc; border-radius: 10px; overflow: hidden;">
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2M5ZjVsYndza25qYWcxZHIxZ3lsaTk4eXEybTk5NWw4cGs3OWwxNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EvwvR3LuACyFWUqvmn/giphy.gif" width="405" alt="Imagen 3">
+    </div>
+</div>
+
+
+<style>
+    /* Cada radio button cambiará la posición de las imágenes */
+    #carousel input[type="radio"]:nth-child(1):checked ~ .carousel-images {
+        transform: translateX(0%);
+    }
+    #carousel input[type="radio"]:nth-child(2):checked ~ .carousel-images {
+        transform: translateX(-33.33%);
+    }
+    #carousel input[type="radio"]:nth-child(3):checked ~ .carousel-images {
+        transform: translateX(-66.66%);
+    }
+
+    /* Aseguramos que las imágenes no sean demasiado grandes */
+    .carousel-images img {
+        max-width: 100%; /* Esto ajusta el tamaño de las imágenes dentro del contenedor */
+        height: auto;
+    }
+</style>
+
+
+<script>
+let index = 0;
+const images = document.querySelectorAll("#carousel img");
+function showSlide(i) {
+    document.querySelector("#carousel").style.transform = `translateX(-${i * 100}%)`;
+}
+function nextSlide() { index = (index + 1) % images.length; showSlide(index); }
+function prevSlide() { index = (index - 1 + images.length) % images.length; showSlide(index); }
+showSlide(index);
+</script>
+
+<!-- Sección de Introducción con Texto Explicativo Lateral -->
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+    <aside style="flex: 1; padding: 20px; background-color: #f1f1f1; color: #555; text-align: justify;">
+        <p>La conservación del agua en la agricultura es crucial para afrontar los desafíos climáticos y económicos que enfrentan los productores. Adoptar prácticas sostenibles no solo optimiza el uso del agua, sino que también ayuda a reducir el desperdicio de este recurso vital. Al implementar estas prácticas, se garantiza una mayor eficiencia en la producción agrícola, al tiempo que se preservan los ecosistemas y se promueve un uso más responsable de los recursos naturales, asegurando la viabilidad de la agricultura a largo plazo.</p>
+    </aside>
+    <div style="flex: 2; background-color: #f4f6f9; padding: 20px; border-radius: 10px; margin: 0 10px;">
+        <p style="font-size: 1.2em; color: #2C3E50; text-align: center;">El agua es un recurso fundamental y sumamente valioso en la agricultura, ya que es esencial para el crecimiento y desarrollo de los cultivos. La disponibilidad de agua influye directamente en la productividad agrícola y, en muchas regiones, su uso debe ser cuidadosamente administrado para evitar el agotamiento de las fuentes de agua y proteger el medio ambiente. A continuación, presentamos algunas prácticas que permiten optimizar el uso del agua en la agricultura, minimizar el impacto ambiental y, al mismo tiempo, reducir los costos de los sistemas de riego. Estas recomendaciones no solo promueven la sostenibilidad en el uso de los recursos hídricos, sino que también ayudan a los agricultores a mantener la eficiencia económica en sus operaciones.</p>
+    </div>
+    <aside style="flex: 1; padding: 20px; background-color: #f1f1f1; color: #555; text-align: justify;">
+        <p>Explorar soluciones como el riego eficiente y la recolección de agua de lluvia ayuda a mejorar la resiliencia agrícola. Estas prácticas permiten aprovechar mejor el agua y reducir la presión sobre los recursos hídricos. El riego eficiente, como el riego por goteo, usa el agua de manera más precisa, mientras que la recolección de agua de lluvia ofrece una fuente adicional para los cultivos. Ambas soluciones contribuyen a un uso más sostenible del agua y protegen los recursos disponibles.</p>
+    </aside>
+</div>
+
+<!-- Sección de Información Detallada en Columnas -->
+<section style="display: flex; gap: 20px; max-width: 1200px; margin: 30px auto; padding: 10px;">
+    <!-- Columna de Información -->
+    <div style="flex: 1; padding: 20px; background-color: #e3f2fd; border-radius: 10px;">
+        <h3 style="color: #0288d1; font-size: 1.5em;">Riego por Goteo</h3>
+        <p style="color: #2C3E50;">Este método proporciona agua directamente a las raíces, permitiendo un uso eficiente y evitando la evaporación. Es ideal para áreas áridas y cultivos de alto valor.</p>
+    </div>
+    <div style="flex: 1; padding: 20px; background-color: #f1f8e9; border-radius: 10px;">
+        <h3 style="color: #388e3c; font-size: 1.5em;">Cobertura de Cultivos</h3>
+        <p style="color: #2C3E50;">Aplicar coberturas reduce la evaporación, mejora la retención de humedad y protege el suelo contra la erosión. Ayuda a crear un microclima favorable para las plantas.</p>
+    </div>
+    <div style="flex: 1; padding: 20px; background-color: #e0f7fa; border-radius: 10px;">
+        <h3 style="color: #00796b; font-size: 1.5em;">Recogida de Agua de Lluvia</h3>
+        <p style="color: #2C3E50;">Recoger y almacenar agua de lluvia permite reducir la dependencia de fuentes subterráneas, promoviendo el uso sostenible de recursos naturales en áreas agrícolas.</p>
+    </div>
+</section>
+
+<!-- Beneficios de la Conservación del Agua -->
+<section style="max-width: 1200px; margin: auto; padding: 20px; background-color: #f9fbe7; border-radius: 10px; display: flex; justify-content: space-between;">
+    <div style="flex: 2;">
+        <h2 style="color: #827717; text-align: center;">Beneficios de Conservar Agua</h2>
+        <P2>La conservación del agua en la agricultura es crucial para afrontar los desafíos climáticos y económicos que enfrentan los productores. Adoptar prácticas sostenibles no solo optimiza el uso del agua, sino que también ayuda a reducir el desperdicio de este recurso vital. Implementar tecnologías de riego eficientes, como el riego por goteo, permite aplicar agua directamente a las raíces de las plantas, mejorando la absorción y reduciendo la evaporación. Además, la recolección de agua de lluvia ofrece una alternativa valiosa para los periodos secos, aliviando la presión sobre los sistemas de riego tradicionales.
+            </P2>
+        <ul style="color: #2C3E50; font-size: 1.1em; line-height: 1.6; padding-left: 20px;">
+            
+        <li>Reduce el costo de riego y producción.</li>
+            <li>Minimiza el impacto ambiental y combate el cambio climático.</li>
+            <li>Conserva agua para futuras generaciones.</li>
+            <li>Mantiene los ecosistemas saludables y evita la degradación del suelo.</li>
+        </ul>
+        <P1>Estas prácticas no solo aseguran una mayor eficiencia en la producción agrícola, sino que también tienen importantes beneficios ambientales. Ayudan a reducir la huella de carbono del sector agrícola, ya que se disminuye el uso de energía para el bombeo y distribución de agua. Al mismo tiempo, el ahorro de agua contribuye a preservar este recurso para el futuro, asegurando que las generaciones venideras puedan continuar contando con fuentes suficientes.
+
+            Además, un uso más responsable del agua evita la degradación del suelo, previene la salinización y ayuda a mantener los ecosistemas saludables. La conservación del agua es, por tanto, esencial para la sostenibilidad a largo plazo de la agricultura, protegiendo tanto el medio ambiente como los medios de vida de los productores agrícolas.</P2>
+    </div>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmdzNXpwMmkwNWRibW5zNHdsazdmNXkwbHR2eGJqODk1Mm81bDlzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GmnCnm9LVe9zZyxgnl/giphy.gif" alt="Beneficios" style="flex: 1; width: 100%; height: auto; border-radius: 10px;">
+</section>
+
+<!-- Recursos Útiles en Formato de Tarjetas -->
+<section style="display: flex; gap: 20px; max-width: 1200px; margin: 40px auto; padding: 20px;">
+    <div style="flex: 1; background-color: #fce4ec; padding: 15px; border-radius: 10px;">
+        <h3 style="color: #d81b60;">UN Water</h3>
+        <p>Organización dedicada a la gestión y protección de recursos hídricos en todo el mundo.</p>
+        <a href="https://www.unwater.org/" target="_blank" style="color: #d81b60;">Visitar sitio</a>
+    </div>
+    <div style="flex: 1; background-color: #fce4ec; padding: 15px; border-radius: 10px;">
+        <h3 style="color: #d81b60;">Agua Potable - OMS</h3>
+        <p>Información clave de la OMS sobre agua potable y saneamiento para la salud pública.</p>
+        <a href="https://www.who.int/es/news-room/fact-sheets/detail/drinking-water" target="_blank" style="color: #d81b60;">Visitar sitio</a>
+    </div>
+    <div style="flex: 1; background-color: #fce4ec; padding: 15px; border-radius: 10px;">
+        <h3 style="color: #d81b60;">Consejos de Conservación</h3>
+        <p>NRDC ofrece una guía práctica sobre cómo conservar el agua en la vida cotidiana y en la agricultura.</p>
+        <a href="https://www.nrdc.org/sites/default/files/water-smart-agriculture-climate-insecurity-presentation.pdf" target="_blank" style="color: #d81b60;">Visitar sitio</a>
+    </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2024 Proyecto Cuidado del Agua CBTA</p>
+</footer>

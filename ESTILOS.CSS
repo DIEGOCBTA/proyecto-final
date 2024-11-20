@@ -1,0 +1,303 @@
+.faculty-glyphic-regular {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+ 
+
+  .new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+
+}
+
+  
+  body {
+    font-family: "Faculty Glyphic", sans-serif;
+    background-image: url('https://i.imgur.com/vJHY4g6.png');
+    background-size: cover;
+    
+    
+   
+    color: #8688ee;
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+}
+
+h1 {
+    font-family: "Cinzel", sans-serif;
+    background-color: #788eca00;
+    color: #ffffff;
+    font-size: 3.45em;
+   
+
+    width: 100%
+    
+}
+   
+
+header {
+    background-color: #001f3f; /* navy blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+marquee {
+    background-color: #001830; /* navy blue */
+   color: aliceblue;
+   font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+    text-decoration-color: rgb(255, 255, 255);
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+aside {
+    background-color: #002f55a9; /* Fondo azul oscuro */
+    color: #ffffff; /* Color de texto blanco para mayor contraste */
+    padding: 10px;
+    width: 210px;
+    float: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    margin: 20px;
+    border-radius: 8px;
+}
+aside2 {
+    background-color: #002f55a9; /* Fondo azul oscuro */
+    color: #ffffff; /* Color de texto blanco para mayor contraste */
+    padding: 10px;
+    width: 210px;
+    float: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 2050px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+
+main {
+    margin-left: 0px; /* space for sidebar */
+    padding: 20px;
+}
+
+footer {
+    clear: both;
+    background-color: #001f3f; /* navy blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.imagen {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333; /* dark gray */
+    margin: 10px 0;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333333f8; /* dark gray */
+    margin: 10px 0;
+    max-width: 150PX;
+    height: 150px;
+}
+
+.feature {
+    background: rgb(10, 11, 66);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 390PX;
+    height: 390px;
+}
+.highlight {
+    background: rgb(20, 21, 82); 
+    border-radius: 8px; 
+    padding: 29px; 
+    text-align: center; 
+    color: white; 
+}
+
+
+
+
+/* lo siguiente es del menu desplegable*/
+.navbar {
+    background-color: #001f3f; /* Color principal del menú */
+    padding: 0;
+    font-size: 1.85em;
+    text-align: left;
+    margin: 0;
+    line-height: 2.5;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Eliminar márgenes innecesarios */
+}
+
+.navbar > ul > li {
+    display: inline-block; /* Asegura la disposición horizontal */
+    position: relative;
+    margin: 0; /* Eliminar márgenes para evitar desalineación */
+    padding: 0 10px; /* Espaciado horizontal entre los elementos */
+    align-items: center; /* Alineación vertical */
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* Línea sombreada entre opciones */
+}
+
+.navbar > ul > li:last-child {
+    border-right: none; /* Eliminar la línea en el último ítem del menú */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Aumentar el espacio alrededor del texto */
+    display: block;
+    line-height: 1;
+    transition: background-color 0.3s ease; /* Añadir transición suave */
+}
+
+.navbar a:hover {
+    background-color: #004d40; /* Color al pasar el mouse */
+}
+
+.dropdown {
+    display: none; /* Ocultar el menú desplegable por defecto */
+    position: absolute;
+    background-color: #00796b; /* Color del menú desplegable */
+    min-width: 170px;
+    width: 480px; 
+    z-index: 1;
+    top: 100%; /* Asegurar que el submenú se muestre justo debajo */
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombras para mejorar la visibilidad */
+}
+
+.dropdown li {
+    display: block;
+}
+
+.navbar > ul > li:hover .dropdown {
+    display: block; /* Mostrar el menú desplegable cuando el mouse pasa sobre el ítem */
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px 15px; /* Espacio adicional en el menú desplegable */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #004d40; /* Color al pasar el mouse sobre el submenú */
+}
+
+.navbar > ul > li:hover > a {
+    background-color: #00334e; /* Color del fondo del ítem principal al pasar el mouse */
+}
+
+/* Estilo para el header */
+header {
+    padding: 10px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    margin: 0; /* Eliminar margen superior que pueda generar espacio extra */
+}
+
+/* Contenedor para el menú y el buscador */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    width: 100%;
+}
+
+/* Menú de navegación */
+.navbar {
+    background-color: #001f3f;
+    padding: 0;
+    font-size: 1.85em;
+    line-height: 3;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Eliminar márgenes innecesarios */
+}
+
+.navbar > ul > li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0 10px;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* Línea sombreada entre opciones */
+}
+
+.navbar > ul > li:last-child {
+    border-right: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    line-height: 1;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #004d40;
+}
+
+/* Estilos para el buscador */
+.buscador {
+    margin-left: auto; /* Alinea el buscador a la derecha */
+}
+
+.buscador form input[type="text"] {
+    padding: 5px;
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+.buscador form input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 1em;
+}
